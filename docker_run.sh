@@ -1,9 +1,9 @@
 #!/bin/bash
 
-api_name=${1:-"transcriptior-api"}
-image_name=${1:-"${api_name}-image"}
-image_tag=${2:-"1.0"}
-container_name=${3:-"${api_name}-container"}
+api_name=${1:-"transcriptor-api"}
+image_name=${2:-"${api_name}-image"}
+image_tag=${3:-"1.0"}
+container_name=${4:-"${api_name}-container"}
 
 docker container prune -f
 
